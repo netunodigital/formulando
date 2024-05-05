@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Define color variables */
+:root {
+    --primary-color: #FF3167;
+    --primary-s-color: #F24975;
+    --secondary-color: #FFB206;
+    --secondary-s-color: #FED151;
+    --green-color: #7FBCA3;
+    --green-s-color: #9CE5C7;
+    --dark-color: #1C222B;
+    --light-color: #ffffff;
+    --text-color: #000000;
+}
+
+
+body {
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+}
+p {
+    line-height: 28px;
+}
+a {
+    text-decoration: none;
+}
+div.box {
+    padding: 25px;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+}
+div.pb {
+    background: var(--primary-color);
+    background: linear-gradient(141deg, var(--primary-s-color) 0%, var(--primary-color) 100%);
+    color: var(--light-color);
+}
+div.gb {
+    background: var(--green-color);
+    background: linear-gradient(141deg, var(--green-s-color) 0%, var(--green-color) 100%);
+    color: #000;
+}
+div.yb {
+    background: var(--secondary-color);
+    background: linear-gradient(141deg, var(--secondary-s-color) 0%, var(--secondary-color) 100%);
+    color: #000;
+}
+section#bar {
+    background-color: #333;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(108deg, var(--green-s-color) 0%, var(--green-color) 100%);
+}
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    width: 170px;
+    margin-top: -40px;
+}
+nav {
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 50px;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 30px;
+    color: var(--dark-color);
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.2s;
+    border-radius: 13px;
+}
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+section h1 {
+    width: 100%;
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+section#inicio .container div#div-a {
+    padding-top: 70px;
+    width: 480px;
+}
+section#inicio .container div#div-b {
+    width: calc(100% - 480px);
+}
+section#inicio .container div#div-b img {
+    width: 100%;
+    margin-left: -120px;
+}
+span.title {
+    text-align: center;
+    display: block;
+    padding: 10px 10px 8px;
+    background-image: linear-gradient(to right, var(--light-color) 55%, var(--primary-color) 0%);
+    background-position: top;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    font-size: 20px;
+    font-weight: 400;
+}
+section#inicio span.title {
+    padding: 25px 15px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+section#inicio div.box {
+    border-radius: 18px;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 200px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+section#inicio div.box:hover {
+    transform: scale(1.05);
+    
+}
+
+section#sobre div.container {
+    background-image: url("img/nb.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1040px;
+    padding: 180px;
+    flex-direction: column;
+}
+
+section#sobre div.container div span {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+section#sobre div.container div {
+    padding: 50px 0;
+    background-image: linear-gradient(to right, var(--light-color) 55%, #b3b3b3 0%);
+    background-position: bottom;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+}
+section#sobre div.container div:last-child {
+    background-image: none;
+}
+
+section#sobre div.container div p {
+    text-align: justify;
+}
+
+section#atividades {
+    padding: 50px 0;
+}
+
+section#atividades div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#atividades div.container div#atividades-a {
+    width: 50%;
+    padding: 0 50px 0 0;
+    text-align: justify;
+}
+
+section#atividades div.container div#atividades-a span {
+    font-weight: 500;
+    font-size: 18px;
+}
+section#curso div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#atividades div.container div#atividades-b {
+    width: 50%;
+}
+
+section#atividades div.container div#atividades-b div.box {
+    margin-top: 30px;
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+section#atividades div.container div#atividades-b div.box:hover {
+    transform: scale(1.05);
+}
+section#atividades div.container div#atividades-b div.box span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section#curso div.container div#curso-a {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+section#curso div.container div#curso-a img {
+    width: calc(100% + 100px);
+    margin-left: -50px;
+}
+
+section#curso div.container div#curso-b {
+    width: 50%;
+    padding: 0 0 0 50px;
+    text-align: justify;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#curso div.container div#curso-b span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+section#curso div.container div#curso-b div.box {
+    margin-top: 30px;
+    width: 80%;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+section#curso div.container div#curso-b div.box:hover {
+    transform: scale(1.05);
+}
+
+section#curso {
+    padding: 60px 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+section#material div.container div.box {
+    padding: 40px;
+    text-align: left;
+    margin: 40px 0;
+    width: 100%;
+    border-radius: 30px;
+}
+section#material div.container div.box span {
+    font-size: 18px;
+    font-weight: 500;
+}
+section#material div.container div.box form input {
+    border: none;
+    background-color: #387E62;
+    font-size: 18px;
+    padding: 15px 20px;
+    width: calc(100% - 210px);
+    color: var(--light-color);
+    border-radius: 15px;
+    margin: 20px 20px 0 0;
+    transition: all 0.5s;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+    height: 50px;
+}
+section#material div.container div.box form input:hover {
+    transform: scaleX(1.02) scaleY(1.08);
+}
+
+section#material div.container div.box form input::placeholder {
+    color: var(--light-color);
+    opacity: 1; /* Firefox */
+  }
+  
+ section#material div.container div.box form input::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--light-color);
+  }
+
+  section#material div.container div.box form input:focus{
+      outline: none;
+      transform: scaleX(1.02) scaleY(1.08);
+  }
+
+  section#material div.container div.box form button{
+      background-color: var(--light-color);
+      border: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      width: 180px;
+      border-radius: 15px;
+      height: 50px;
+      font-weight: 500;
+      -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+      box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+      transition: all 0.5s;
+      cursor: pointer;
+  }
+
+section#material div.container div.box form button:hover {
+    transform: scaleX(1.05) scaleY(1.08);
+}
+section#material div.container div.box p#message {
+    text-align: center;
+    font-weight: 500;
+    margin: 20px auto 0;
+    background-color: #387E62;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--light-color);
+    transition: all 0.5s;
+
+}
+
+
