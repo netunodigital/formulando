@@ -67,3 +67,76 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+
+const $dynamicGallery = document.getElementById('dynamic-gallery-demo');
+const dynamicGallery = lightGallery($dynamicGallery, {
+    dynamic: true,
+    hash: false,
+    closable: true,
+    appendSubHtmlTo: '.lg-item',
+    slideDelay: 0,
+    plugins: [lgThumbnail],
+    dynamicEl: [
+        {
+            src: 'img/galeria/img1.jpg',
+            thumb: 'img/galeria/img1.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img2.jpeg',
+            thumb: 'img/galeria/img2.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img3.jpeg',
+            thumb: 'img/galeria/img3.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img4.jpg',
+            thumb: 'img/galeria/img4.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img5.jpg',
+            thumb: 'img/galeria/img5.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img6.jpeg',
+            thumb: 'img/galeria/img6.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img7.jpeg',
+            thumb: 'img/galeria/img7.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img8.jpg',
+            thumb: 'img/galeria/img8.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img9.jpg',
+            thumb: 'img/galeria/img9.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img10.jpg',
+            thumb: 'img/galeria/img10.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria/img11.jpeg',
+            thumb: 'img/galeria/img11.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+    ],
+});
+
+$dynamicGallery.addEventListener('click', function () {
+    dynamicGallery.openGallery(2);
+});

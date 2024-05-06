@@ -140,7 +140,7 @@ span.title {
 section#inicio span.title {
     padding: 25px 15px;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
 }
 section#inicio div.box {
@@ -209,7 +209,7 @@ section#atividades div.container div#atividades-a span {
 }
 section#curso div.container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -354,3 +354,53 @@ section#material div.container div.box p#message {
 }
 
 
+
+
+.inline-gallery-container {
+    width: 100%;
+    margin-top: 30px;
+    height: 0;
+    padding-bottom: 65%;
+}
+
+.lg-thumb-outer,
+.lg-backdrop {
+    background-color: var(--dark-color) !important;
+}
+.lg-content .lg-icon {
+    background: var(--secondary-color);
+    background: linear-gradient(141deg, var(--secondary-s-color) 0%, var(--secondary-color) 100%);
+    color: #000 !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    transition: all 0.5s;
+}
+
+.lg-content .lg-icon:hover {
+    transform: scale(1.1);
+}
+
+.lg-image {
+    border-radius: 20px !important;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.35) !important;
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.35) !important;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.35) !important;
+}
+.lg-img-wrap {
+    padding-bottom: 15px !important;
+}
+.lg-thumb-item {
+    border-radius: 15px !important;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    border-width: 4px !important;
+    cursor: pointer !important;
+}
+
+.lg-thumb-item:hover,
+.lg-thumb-item.active {
+        border-color: var(--primary-color) !important;
+}

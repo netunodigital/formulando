@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <title>Formulando | Literácia Científica</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
 </head>
 <body>
     <section id="bar">
@@ -43,7 +49,7 @@
         <div class="container">
             <div>
                 <span>Quem somos nós</span>
-                <p>Somos um grupo da Rede Nacional de Educação e Ciência (RNEC) e ao mesmo tempo um um <a href="https://portal.ufrj.br/Inscricao/extensao/acaoExtensao/acao?id=A8931343-919C-4609-9046-CF474E1A28EF" style="color: #FF3167; font-weight: 400;">projeto extensão universitária da UFRJ</a>.</p>
+                <p>Somos um grupo da Rede Nacional de Educação e Ciência (RNEC) e ao mesmo tempo um um <a href="https://portal.ufrj.br/Inscricao/extensao/acaoExtensao/acao?id=A8931343-919C-4609-9046-CF474E1A28EF" style="">projeto extensão universitária da UFRJ</a>.</p>
                 <p>Interessados em ciências, educação e promoção da saúde através da literacia científica, desenvolvemos cursos de férias,  atividades de divulgação científica em escolas públicas e associações comunitárias. </p>
             </div>
             <div>
@@ -94,7 +100,7 @@
                     <p>Acontecem durante uma semana e podem ser realizados na escola ou na universidade.
                         Um tema da atualidade é proposto como norteador e para a execução dos experimentos utilizamos o método da redescoberta científica com o intuito de despertar a curiosidade e possibilitar uma nova forma de aprender.</p>
 
-                    <div class="box pb">
+                    <div class="box pb" id="dynamic-gallery-demo">
                         Veja as fotos de cursos anteriores
                         <br><br>
                         <span>Clique aqui</span>
@@ -129,6 +135,8 @@
         <p>Contato: exemplo@email.com | Telefone: (XX) XXXX-XXXX</p>
     </footer> -->
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
