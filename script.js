@@ -138,5 +138,5 @@ const dynamicGallery = lightGallery($dynamicGallery, {
 });
 
 $dynamicGallery.addEventListener('click', function () {
-    dynamicGallery.openGallery(2);
+    dynamicGallery.openGallery();
 });
