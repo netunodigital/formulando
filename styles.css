@@ -367,6 +367,21 @@ section#material div.container div.box p#message {
 .lg-backdrop {
     background-color: var(--dark-color) !important;
 }
+.lg-toolbar .lg-download {
+    display: none !important;
+}
+.lg-toolbar .lg-icon {
+    background: var(--secondary-color) !important;
+    background: linear-gradient(141deg, var(--primary-s-color) 0%, var(--primary-color) 100%) !important;
+    color: var(--light-color) !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15) !important;
+    transition: all 0.5s !important;
+    margin: 20px 20px 0 0;
+}
+
 .lg-content .lg-icon {
     background: var(--secondary-color);
     background: linear-gradient(141deg, var(--secondary-s-color) 0%, var(--secondary-color) 100%);
@@ -378,6 +393,7 @@ section#material div.container div.box p#message {
     transition: all 0.5s;
 }
 
+.lg-toolbar .lg-icon:hover,
 .lg-content .lg-icon:hover {
     transform: scale(1.1);
 }
