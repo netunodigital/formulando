@@ -115,6 +115,11 @@ section .container {
     max-width: 1000px;
 }
 
+section .content {
+    width: 100%; 
+    display: flex;
+}
+
 section#inicio .container div#div-a {
     padding-top: 70px;
     width: 480px;
@@ -164,6 +169,7 @@ section#sobre div.container {
     height: 1040px;
     padding: 180px;
     flex-direction: column;
+    min-width: 1000px;
 }
 
 section#sobre div.container div span {
@@ -419,4 +425,124 @@ section#material div.container div.box p#message {
 .lg-thumb-item:hover,
 .lg-thumb-item.active {
         border-color: var(--primary-color) !important;
+}
+
+@media (max-width: 1080px) {
+    nav {
+        display: none;
+    }
+    .container {
+        padding: 20px;
+    }
+
+    section#sobre {
+        padding: 0;
+    }
+
+    section#sobre div.container {
+        background: #fff;
+        width: 100%;
+        min-width: 0;
+        max-width: 600px;
+        padding: 0 40px 40px;
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+        margin: 0;
+        height: auto;
+    }
+    section .content {
+        display: block;
+    }
+    
+    section#inicio .container {
+        display: block;
+    } 
+    section#inicio .container div#div-a {
+        padding-top: 0;
+        width: 100%;
+    }
+    section#inicio .container div#div-b {
+        width: 100%;
+    }
+    section#inicio .container div#div-b img {
+        margin: 50px 0 0;
+        width: 100%;
+    }
+    section#inicio div.box {
+        margin: auto;
+    }
+
+    section#atividades div.container div#atividades-a {
+        width: 100%;
+        padding: 20px;
+    }
+    
+
+    section#atividades div.container div#atividades-b {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    section#atividades div.container div#atividades-b div.box {
+        margin-top: 0;
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        
+    }
+
+    section#curso div.container div#curso-a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    section#curso div.container div#curso-a img {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    section#curso div.container div#curso-b {
+        width: 100%;
+        padding: 40px 40px 0;
+        text-align: justify;
+        font-weight: 200;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    section#curso div.container div#curso-b span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    
+    section#curso div.container div#curso-b div.box {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 500px;
+    }
+    section#curso div.container div#curso-b div.box:hover {
+        transform: scale(1.05);
+    }
+
+    #downloadForm {
+        display: block;
+        width: 100%;
+    }
+    #downloadForm * {
+        display: block;
+        width: 100% !important;
+    }
+    #downloadForm button {
+        max-width: 300px;
+        margin: 20px auto 0;
+    }
+
+    section#material div.container div.box {
+        margin: 0;
+    }
+    
 }
