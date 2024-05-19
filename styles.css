@@ -54,10 +54,22 @@ div.yb {
     color: #000;
 }
 section#bar {
-    background-color: #333;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background: linear-gradient(108deg, var(--green-s-color) 0%, var(--green-color) 100%);
+}
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(108deg, var(--green-s-color) 0%, var(--green-color) 100%);
+}
+footer p {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-color);
+    font-size: 12px;
 }
 header {
     background-color: #fff;
@@ -118,6 +130,7 @@ section .container {
 section .content {
     width: 100%; 
     display: flex;
+    justify-content: space-between;
 }
 
 section#inicio .container div#div-a {
@@ -213,11 +226,6 @@ section#atividades div.container div#atividades-a span {
     font-weight: 500;
     font-size: 18px;
 }
-section#curso div.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 section#atividades div.container div#atividades-b {
     width: 50%;
@@ -238,6 +246,12 @@ section#atividades div.container div#atividades-b div.box:hover {
 section#atividades div.container div#atividades-b div.box span {
     font-size: 18px;
     font-weight: 500;
+}
+
+section#curso div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 section#curso div.container div#curso-a {
@@ -359,6 +373,78 @@ section#material div.container div.box p#message {
 
 }
 
+
+section#parceiros {
+    padding: 0 0 50px;
+}
+
+section#parceiros div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#parceiros div.content  {
+    flex-wrap: wrap;
+}
+
+section#parceiros div.content a {
+    align-self: center;
+    margin: 20px;
+}
+section#parceiros div.content img {
+    align-self: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+section#parceiros div.content img:hover {
+    transform: scale(1.1);
+}
+
+
+section#contato div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+section#contato div.container div#contato-a,
+section#contato div.container div#contato-b {
+    width: 50%;
+    padding: 0 0 0 50px;
+    text-align: justify;
+    font-weight: 200;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#contato div.container div#contato-a span,
+section#contato div.container div#contato-b span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+section#contato div.container div#contato-a div.box,
+section#contato div.container div#contato-b div.box {
+    margin-top: 30px;
+    width: 100%;
+    transition: all 0.5s;
+}
+section#contato div.container div#contato-b div.box a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+section#contato {
+    padding: 60px 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
 
 
 
@@ -543,6 +629,12 @@ section#material div.container div.box p#message {
 
     section#material div.container div.box {
         margin: 0;
+    }
+
+    section#contato div.container div#contato-a,
+    section#contato div.container div#contato-b {
+        width: 100%;
+        padding: 0 0 0 0;
     }
     
 }
