@@ -80,63 +80,206 @@ const dynamicGallery = lightGallery($dynamicGallery, {
     plugins: [lgThumbnail],
     dynamicEl: [
         {
-            src: 'img/galeria/img1.jpg',
-            thumb: 'img/galeria/img1.jpg',
+            src: 'img/galeria-atividades/img1.jpg',
+            thumb: 'img/galeria-atividades/img1.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img2.jpeg',
-            thumb: 'img/galeria/img2.jpeg',
+            src: 'img/galeria-atividades/img2.jpeg',
+            thumb: 'img/galeria-atividades/img2.jpeg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img3.jpeg',
-            thumb: 'img/galeria/img3.jpeg',
+            src: 'img/galeria-atividades/img3.jpeg',
+            thumb: 'img/galeria-atividades/img3.jpeg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img4.jpg',
-            thumb: 'img/galeria/img4.jpg',
+            src: 'img/galeria-atividades/img4.jpg',
+            thumb: 'img/galeria-atividades/img4.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img5.jpg',
-            thumb: 'img/galeria/img5.jpg',
+            src: 'img/galeria-atividades/img5.jpg',
+            thumb: 'img/galeria-atividades/img5.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img6.jpeg',
-            thumb: 'img/galeria/img6.jpeg',
+            src: 'img/galeria-atividades/img6.jpeg',
+            thumb: 'img/galeria-atividades/img6.jpeg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img7.jpeg',
-            thumb: 'img/galeria/img7.jpeg',
+            src: 'img/galeria-atividades/img7.jpeg',
+            thumb: 'img/galeria-atividades/img7.jpeg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img8.jpg',
-            thumb: 'img/galeria/img8.jpg',
+            src: 'img/galeria-atividades/img8.jpg',
+            thumb: 'img/galeria-atividades/img8.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img9.jpg',
-            thumb: 'img/galeria/img9.jpg',
+            src: 'img/galeria-atividades/img9.jpg',
+            thumb: 'img/galeria-atividades/img9.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img10.jpg',
-            thumb: 'img/galeria/img10.jpg',
+            src: 'img/galeria-atividades/img10.jpg',
+            thumb: 'img/galeria-atividades/img10.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
         },
         {
-            src: 'img/galeria/img11.jpeg',
-            thumb: 'img/galeria/img11.jpeg',
+            src: 'img/galeria-atividades/img11.jpg',
+            thumb: 'img/galeria-atividades/img11.jpg',
             subHtml: `<div class="lightGallery-captions"></div>`,
-        },
+        }
     ],
 });
 
 $dynamicGallery.addEventListener('click', function () {
     dynamicGallery.openGallery();
+});
+
+
+
+const $dynamicGallery2 = document.getElementById('dynamic-gallery-demo-2');
+const dynamicGallery2 = lightGallery($dynamicGallery2, {
+    dynamic: true,
+    hash: false,
+    closable: true,
+    appendSubHtmlTo: '.lg-item',
+    slideDelay: 0,
+    plugins: [lgThumbnail],
+    dynamicEl: [
+        {
+            src: 'img/galeria-cursos/img1.jpeg',
+            thumb: 'img/galeria-cursos/img1.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img2.jpeg',
+            thumb: 'img/galeria-cursos/img2.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img3.jpeg',
+            thumb: 'img/galeria-cursos/img3.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img4.jpeg',
+            thumb: 'img/galeria-cursos/img4.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img5.jpeg',
+            thumb: 'img/galeria-cursos/img5.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img6.jpeg',
+            thumb: 'img/galeria-cursos/img6.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img7.jpeg',
+            thumb: 'img/galeria-cursos/img7.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img8.jpeg',
+            thumb: 'img/galeria-cursos/img8.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img9.jpeg',
+            thumb: 'img/galeria-cursos/img9.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img10.jpeg',
+            thumb: 'img/galeria-cursos/img10.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img11.jpeg',
+            thumb: 'img/galeria-cursos/img11.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img12.jpeg',
+            thumb: 'img/galeria-cursos/img12.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img13.jpeg',
+            thumb: 'img/galeria-cursos/img13.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img14.jpg',
+            thumb: 'img/galeria-cursos/img14.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img15.jpg',
+            thumb: 'img/galeria-cursos/img15.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img16.jpg',
+            thumb: 'img/galeria-cursos/img16.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img17.jpeg',
+            thumb: 'img/galeria-cursos/img17.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img18.jpeg',
+            thumb: 'img/galeria-cursos/img18.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img19.jpeg',
+            thumb: 'img/galeria-cursos/img19.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img20.jpeg',
+            thumb: 'img/galeria-cursos/img20.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img21.jpeg',
+            thumb: 'img/galeria-cursos/img21.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img22.jpg',
+            thumb: 'img/galeria-cursos/img22.jpg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img23.jpeg',
+            thumb: 'img/galeria-cursos/img23.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img24.jpeg',
+            thumb: 'img/galeria-cursos/img24.jpeg',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+        {
+            src: 'img/galeria-cursos/img25.webp',
+            thumb: 'img/galeria-cursos/img25.webp',
+            subHtml: `<div class="lightGallery-captions"></div>`,
+        },
+    ],
+});
+
+$dynamicGallery2.addEventListener('click', function () {
+    dynamicGallery2.openGallery();
 });
